@@ -6,7 +6,9 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "start": "node --experimental-json-modules src/api.js",
+    "start": "node src/api.js",
+    "dev": "node --experimental-json-modules src/api.js",
+    "build": "echo 'No build step required'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "André Oliveira Silva",
@@ -16,5 +18,8 @@
     "rimraf": "^3.0.2",
     "swagger-ui-express": "^4.3.0",
     "whatsapp-web.js": "^1.16.5"
+  },
+  "engines": {
+    "node": ">=14.x"
   }
 }
